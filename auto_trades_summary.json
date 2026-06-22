@@ -1,0 +1,112 @@
+{
+  "updated": "2026-06-22 19:33 UTC",
+  "total": 5,
+  "wins": 1,
+  "losses": 4,
+  "net_pnl": -0.0472,
+  "wr_pct": 20.0,
+  "trades": [
+    {
+      "ts": "2026-06-21T21:09:38.947715+00:00",
+      "symbol": "DOTUSDT",
+      "side": "LONG",
+      "outcome": "LOSS",
+      "entry": 0.9580000000000001,
+      "exit_px": 0.9520000000000001,
+      "pnl": -0.0316,
+      "qty": 5.26,
+      "breakeven_set": false,
+      "pnl_verified": true
+    },
+    {
+      "ts": "2026-06-21T23:33:42.524564+00:00",
+      "symbol": "XRPUSDT",
+      "side": "LONG",
+      "outcome": "LOSS",
+      "entry": 1.1307999999999998,
+      "exit_px": 1.1251,
+      "pnl": -0.0256,
+      "qty": 4.5,
+      "breakeven_set": false,
+      "pnl_verified": true
+    },
+    {
+      "ts": "2026-06-21T01:23:42+00:00",
+      "symbol": "BNBUSDT",
+      "side": "LONG",
+      "outcome": "WIN",
+      "entry": 584.25,
+      "exit_px": 591.26,
+      "pnl": 0.063,
+      "qty": 0.009,
+      "pnl_verified": true,
+      "note": "real TP fill @591.26 reconstructed from Binance myTrades; original monitor missed it"
+    },
+    {
+      "ts": "2026-06-22T18:47:11.384332+00:00",
+      "symbol": "DOTUSDT",
+      "side": "LONG",
+      "outcome": "LOSS",
+      "entry": 0.954,
+      "exit_px": 0.949,
+      "pnl": -0.0264,
+      "qty": 5.28,
+      "pnl_verified": true
+    },
+    {
+      "ts": "2026-06-22T19:26:07.902937+00:00",
+      "symbol": "DOTUSDT",
+      "side": "LONG",
+      "outcome": "LOSS",
+      "entry": 0.9469999999999998,
+      "exit_px": 0.9420000000000001,
+      "pnl": -0.0266,
+      "qty": 5.32,
+      "pnl_verified": true
+    }
+  ],
+  "balance": {
+    "usdt_free": 17.31,
+    "total_usd": 227.73,
+    "can_trade": true,
+    "snap_ts": "2026-06-22T19:18:01.178860+00:00",
+    "holdings": [
+      {
+        "asset": "XRP",
+        "usd_value": 129.79
+      },
+      {
+        "asset": "USDT",
+        "usd_value": 24.8
+      },
+      {
+        "asset": "BTC",
+        "usd_value": 17.28
+      },
+      {
+        "asset": "HBAR",
+        "usd_value": 15.79
+      },
+      {
+        "asset": "SOL",
+        "usd_value": 14.52
+      },
+      {
+        "asset": "ETH",
+        "usd_value": 11.15
+      },
+      {
+        "asset": "BNB",
+        "usd_value": 5.22
+      },
+      {
+        "asset": "DOT",
+        "usd_value": 5.03
+      },
+      {
+        "asset": "GMT",
+        "usd_value": 4.02
+      }
+    ]
+  }
+}
