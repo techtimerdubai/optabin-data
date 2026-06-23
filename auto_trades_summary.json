@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23 10:15 UTC",
+  "updated": "2026-06-23 10:23 UTC",
   "total": 6,
   "wins": 1,
   "losses": 5,
@@ -78,13 +78,13 @@
   ],
   "balance": {
     "usdt_free": 21.92,
-    "total_usd": 221.76,
+    "total_usd": 221.89,
     "can_trade": true,
-    "snap_ts": "2026-06-23T09:18:01.319989+00:00",
+    "snap_ts": "2026-06-23T10:18:01.620837+00:00",
     "holdings": [
       {
         "asset": "XRP",
-        "usd_value": 126.48
+        "usd_value": 126.6
       },
       {
         "asset": "USDT",
@@ -92,19 +92,19 @@
       },
       {
         "asset": "BTC",
-        "usd_value": 17.39
+        "usd_value": 17.38
       },
       {
         "asset": "HBAR",
-        "usd_value": 15.42
+        "usd_value": 15.41
       },
       {
         "asset": "SOL",
-        "usd_value": 13.77
+        "usd_value": 13.78
       },
       {
         "asset": "ETH",
-        "usd_value": 10.61
+        "usd_value": 10.63
       },
       {
         "asset": "BNB",
