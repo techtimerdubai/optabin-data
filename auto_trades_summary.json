@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-24 10:15 UTC",
-  "total": 6,
+  "updated": "2026-06-24 10:25 UTC",
+  "total": 7,
   "wins": 1,
-  "losses": 5,
-  "net_pnl": -0.0739,
-  "wr_pct": 16.7,
+  "losses": 6,
+  "net_pnl": -0.0997,
+  "wr_pct": 14.3,
   "trades": [
     {
       "ts": "2026-06-21T21:09:38.947715+00:00",
@@ -74,13 +74,24 @@
       "pnl": -0.0267,
       "qty": 5.33,
       "pnl_verified": true
+    },
+    {
+      "ts": "2026-06-24T10:19:12.317806+00:00",
+      "symbol": "XRPUSDT",
+      "side": "LONG",
+      "outcome": "LOSS",
+      "entry": 1.1001,
+      "exit_px": 1.0945,
+      "pnl": -0.0258,
+      "qty": 4.6,
+      "pnl_verified": true
     }
   ],
   "balance": {
-    "usdt_free": 202.94,
-    "total_usd": 220.97,
+    "usdt_free": 202.95,
+    "total_usd": 220.95,
     "can_trade": true,
-    "snap_ts": "2026-06-24T09:18:00.441032+00:00",
+    "snap_ts": "2026-06-24T10:18:00.570625+00:00",
     "holdings": [
       {
         "asset": "USDT",
@@ -88,11 +99,11 @@
       },
       {
         "asset": "LINK",
-        "usd_value": 5.1
+        "usd_value": 5.08
       },
       {
         "asset": "XRP",
-        "usd_value": 5.07
+        "usd_value": 5.06
       }
     ]
   }
