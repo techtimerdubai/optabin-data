@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-24 13:16 UTC",
-  "total": 9,
+  "updated": "2026-06-24T14:14:29.992944+00:00",
   "wins": 2,
   "losses": 7,
-  "net_pnl": -0.0649,
-  "wr_pct": 22.2,
+  "win_rate": 22.2,
+  "total_pnl": -0.06,
+  "balance_usdt": 210.25,
   "trades": [
     {
       "ts": "2026-06-21T21:09:38.947715+00:00",
@@ -108,21 +108,5 @@
       "qty": 4.7,
       "pnl_verified": true
     }
-  ],
-  "balance": {
-    "usdt_free": 208.02,
-    "total_usd": 221.0,
-    "can_trade": true,
-    "snap_ts": "2026-06-24T12:18:00.630923+00:00",
-    "holdings": [
-      {
-        "asset": "USDT",
-        "usd_value": 215.3
-      },
-      {
-        "asset": "LINK",
-        "usd_value": 5.1
-      }
-    ]
-  }
+  ]
 }
