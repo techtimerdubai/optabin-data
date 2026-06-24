@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24 12:15 UTC",
+  "updated": "2026-06-24 12:23 UTC",
   "total": 8,
   "wins": 2,
   "losses": 6,
@@ -99,22 +99,18 @@
     }
   ],
   "balance": {
-    "usdt_free": 202.9,
-    "total_usd": 220.88,
+    "usdt_free": 208.02,
+    "total_usd": 221.0,
     "can_trade": true,
-    "snap_ts": "2026-06-24T11:18:00.463125+00:00",
+    "snap_ts": "2026-06-24T12:18:00.630923+00:00",
     "holdings": [
       {
         "asset": "USDT",
-        "usd_value": 210.13
-      },
-      {
-        "asset": "XRP",
-        "usd_value": 5.11
+        "usd_value": 215.3
       },
       {
         "asset": "LINK",
-        "usd_value": 5.06
+        "usd_value": 5.1
       }
     ]
   }
