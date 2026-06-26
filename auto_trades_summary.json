@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-26 02:05 UTC",
-  "total": 9,
+  "updated": "2026-06-26 02:13 UTC",
+  "total": 10,
   "wins": 2,
-  "losses": 7,
-  "net_pnl": -0.0649,
-  "wr_pct": 22.2,
+  "losses": 8,
+  "net_pnl": -0.0893,
+  "wr_pct": 20.0,
   "trades": [
     {
       "ts": "2026-06-21T21:09:38.947715+00:00",
@@ -106,6 +106,17 @@
       "exit_px": 1.0816,
       "pnl": -0.0263,
       "qty": 4.7,
+      "pnl_verified": true
+    },
+    {
+      "ts": "2026-06-26T02:08:40.660640+00:00",
+      "symbol": "DOTUSDT",
+      "side": "LONG",
+      "outcome": "LOSS",
+      "entry": 0.828,
+      "exit_px": 0.8240000000000001,
+      "pnl": -0.0244,
+      "qty": 6.09,
       "pnl_verified": true
     }
   ],
