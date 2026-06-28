@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-28 06:15 UTC",
-  "total": 13,
+  "updated": "2026-06-28 06:23 UTC",
+  "total": 14,
   "wins": 3,
-  "losses": 10,
-  "net_pnl": -0.1392,
-  "wr_pct": 23.1,
+  "losses": 11,
+  "net_pnl": -0.1678,
+  "wr_pct": 21.4,
   "trades": [
     {
       "ts": "2026-06-21T21:09:38.947715+00:00",
@@ -151,13 +151,24 @@
       "pnl": 0.0252,
       "qty": 0.009,
       "pnl_verified": true
+    },
+    {
+      "ts": "2026-06-28T06:15:39.087770+00:00",
+      "symbol": "BNBUSDT",
+      "side": "LONG",
+      "outcome": "LOSS",
+      "entry": 556.89,
+      "exit_px": 554.03,
+      "pnl": -0.0286,
+      "qty": 0.01,
+      "pnl_verified": true
     }
   ],
   "balance": {
-    "usdt_free": 80.12,
-    "total_usd": 651.87,
+    "usdt_free": 85.68,
+    "total_usd": 651.23,
     "can_trade": true,
-    "snap_ts": "2026-06-28T05:18:01.205667+00:00",
+    "snap_ts": "2026-06-28T06:18:01.199037+00:00",
     "holdings": [
       {
         "asset": "USDT",
@@ -165,7 +176,7 @@
       },
       {
         "asset": "BTC",
-        "usd_value": 167.29
+        "usd_value": 166.88
       },
       {
         "asset": "USDC",
@@ -173,19 +184,19 @@
       },
       {
         "asset": "USDT",
-        "usd_value": 87.09
+        "usd_value": 92.63
       },
       {
         "asset": "BNB",
-        "usd_value": 34.81
+        "usd_value": 29.1
       },
       {
         "asset": "XRP",
-        "usd_value": 4.82
+        "usd_value": 4.8
       },
       {
         "asset": "LINK",
-        "usd_value": 4.8
+        "usd_value": 4.77
       },
       {
         "asset": "USDC",
