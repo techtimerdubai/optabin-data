@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-28 21:55 UTC",
-  "total": 15,
-  "wins": 3,
+  "updated": "2026-06-28 22:03 UTC",
+  "total": 16,
+  "wins": 4,
   "losses": 12,
-  "net_pnl": -0.1937,
-  "wr_pct": 20.0,
+  "net_pnl": -0.132,
+  "wr_pct": 25.0,
   "trades": [
     {
       "ts": "2026-06-21T21:09:38.947715+00:00",
@@ -171,6 +171,17 @@
       "entry": 1565.1100000000001,
       "exit_px": 1557.26,
       "pnl": -0.0259,
+      "qty": 0.0033,
+      "pnl_verified": true
+    },
+    {
+      "ts": "2026-06-28T22:03:16.446043+00:00",
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "outcome": "WIN",
+      "entry": 1559.21,
+      "exit_px": 1577.92,
+      "pnl": 0.0617,
       "qty": 0.0033,
       "pnl_verified": true
     }
