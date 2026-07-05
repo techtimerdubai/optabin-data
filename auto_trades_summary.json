@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-05 15:05 UTC",
-  "total": 18,
-  "wins": 4,
+  "updated": "2026-07-05 15:13 UTC",
+  "total": 19,
+  "wins": 5,
   "losses": 14,
-  "net_pnl": -0.184,
-  "wr_pct": 22.2,
+  "net_pnl": -0.1233,
+  "wr_pct": 26.3,
   "trades": [
     {
       "ts": "2026-06-21T21:09:38.947715+00:00",
@@ -205,6 +205,17 @@
       "exit_px": 539.42,
       "pnl": -0.0271,
       "qty": 0.01,
+      "pnl_verified": true
+    },
+    {
+      "ts": "2026-07-05T15:07:17.296037+00:00",
+      "symbol": "XRPUSDT",
+      "side": "LONG",
+      "outcome": "WIN",
+      "entry": 1.1275000000000002,
+      "exit_px": 1.141,
+      "pnl": 0.0607,
+      "qty": 4.5,
       "pnl_verified": true
     }
   ],
