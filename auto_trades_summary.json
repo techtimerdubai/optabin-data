@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-06 11:57 UTC",
-  "total": 19,
+  "updated": "2026-07-06 12:15 UTC",
+  "total": 20,
   "wins": 5,
-  "losses": 14,
-  "net_pnl": -0.1233,
-  "wr_pct": 26.3,
+  "losses": 15,
+  "net_pnl": -0.1494,
+  "wr_pct": 25.0,
   "trades": [
     {
       "ts": "2026-06-21T21:09:38.947715+00:00",
@@ -216,6 +216,17 @@
       "exit_px": 1.141,
       "pnl": 0.0607,
       "qty": 4.5,
+      "pnl_verified": true
+    },
+    {
+      "ts": "2026-07-06T12:03:33.862282+00:00",
+      "symbol": "BNBUSDT",
+      "side": "LONG",
+      "outcome": "LOSS",
+      "entry": 577.0300000000001,
+      "exit_px": 574.13,
+      "pnl": -0.0261,
+      "qty": 0.009,
       "pnl_verified": true
     }
   ],
