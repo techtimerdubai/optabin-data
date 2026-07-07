@@ -1,23 +1,11 @@
 {
-  "updated": "2026-07-07 14:35 UTC",
-  "total": 21,
+  "updated": "2026-07-07 14:43 UTC",
+  "total": 22,
   "wins": 6,
-  "losses": 15,
-  "net_pnl": -0.0883,
-  "wr_pct": 28.6,
+  "losses": 16,
+  "net_pnl": -0.1213,
+  "wr_pct": 27.3,
   "trades": [
-    {
-      "ts": "2026-06-21T23:33:42.524564+00:00",
-      "symbol": "XRPUSDT",
-      "side": "LONG",
-      "outcome": "LOSS",
-      "entry": 1.1307999999999998,
-      "exit_px": 1.1251,
-      "pnl": -0.0256,
-      "qty": 4.5,
-      "breakeven_set": false,
-      "pnl_verified": true
-    },
     {
       "ts": "2026-06-21T01:23:42+00:00",
       "symbol": "BNBUSDT",
@@ -225,6 +213,17 @@
       "entry": 7.797000000000001,
       "exit_px": 7.891,
       "pnl": 0.0611,
+      "qty": 0.65,
+      "pnl_verified": true
+    },
+    {
+      "ts": "2026-07-07T14:36:48.040421+00:00",
+      "symbol": "LINKUSDT",
+      "side": "LONG",
+      "outcome": "LOSS",
+      "entry": 7.851,
+      "exit_px": 7.811999999999999,
+      "pnl": -0.033,
       "qty": 0.65,
       "pnl_verified": true
     }
