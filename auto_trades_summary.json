@@ -1,23 +1,11 @@
 {
-  "updated": "2026-07-07 19:17 UTC",
-  "total": 22,
+  "updated": "2026-07-07 19:35 UTC",
+  "total": 23,
   "wins": 6,
-  "losses": 16,
-  "net_pnl": -0.1213,
-  "wr_pct": 27.3,
+  "losses": 17,
+  "net_pnl": -0.154,
+  "wr_pct": 26.1,
   "trades": [
-    {
-      "ts": "2026-06-21T01:23:42+00:00",
-      "symbol": "BNBUSDT",
-      "side": "LONG",
-      "outcome": "WIN",
-      "entry": 584.25,
-      "exit_px": 591.26,
-      "pnl": 0.063,
-      "qty": 0.009,
-      "pnl_verified": true,
-      "note": "real TP fill @591.26 reconstructed from Binance myTrades; original monitor missed it"
-    },
     {
       "ts": "2026-06-22T18:47:11.384332+00:00",
       "symbol": "DOTUSDT",
@@ -226,13 +214,24 @@
       "pnl": -0.033,
       "qty": 0.65,
       "pnl_verified": true
+    },
+    {
+      "ts": "2026-07-07T19:18:45.256708+00:00",
+      "symbol": "XRPUSDT",
+      "side": "LONG",
+      "outcome": "LOSS",
+      "entry": 1.1192000000000002,
+      "exit_px": 1.1136,
+      "pnl": -0.0327,
+      "qty": 4.5,
+      "pnl_verified": true
     }
   ],
   "balance": {
-    "usdt_free": 81.15,
-    "total_usd": 642.34,
+    "usdt_free": 76.01,
+    "total_usd": 640.69,
     "can_trade": true,
-    "snap_ts": "2026-07-07T18:18:01.148603+00:00",
+    "snap_ts": "2026-07-07T19:18:01.511166+00:00",
     "holdings": [
       {
         "asset": "USDT",
@@ -240,7 +239,7 @@
       },
       {
         "asset": "BTC",
-        "usd_value": 178.44
+        "usd_value": 177.01
       },
       {
         "asset": "USDC",
@@ -248,11 +247,15 @@
       },
       {
         "asset": "USDT",
-        "usd_value": 81.15
+        "usd_value": 76.01
       },
       {
         "asset": "BNB",
-        "usd_value": 30.55
+        "usd_value": 30.36
+      },
+      {
+        "asset": "XRP",
+        "usd_value": 5.13
       }
     ]
   }
