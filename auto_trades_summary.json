@@ -1,22 +1,11 @@
 {
-  "updated": "2026-07-08 08:25 UTC",
-  "total": 25,
+  "updated": "2026-07-08 08:33 UTC",
+  "total": 26,
   "wins": 6,
-  "losses": 19,
-  "net_pnl": -0.2192,
-  "wr_pct": 24.0,
+  "losses": 20,
+  "net_pnl": -0.2524,
+  "wr_pct": 23.1,
   "trades": [
-    {
-      "ts": "2026-06-22T21:39:41.289607+00:00",
-      "symbol": "DOTUSDT",
-      "side": "LONG",
-      "outcome": "LOSS",
-      "entry": 0.946,
-      "exit_px": 0.941,
-      "pnl": -0.0267,
-      "qty": 5.33,
-      "pnl_verified": true
-    },
     {
       "ts": "2026-06-24T10:19:12.317806+00:00",
       "symbol": "XRPUSDT",
@@ -224,6 +213,17 @@
       "exit_px": 7.644,
       "pnl": -0.0327,
       "qty": 0.66,
+      "pnl_verified": true
+    },
+    {
+      "ts": "2026-07-08T08:30:25.980576+00:00",
+      "symbol": "BNBUSDT",
+      "side": "LONG",
+      "outcome": "LOSS",
+      "entry": 565.09,
+      "exit_px": 562.25,
+      "pnl": -0.0332,
+      "qty": 0.009,
       "pnl_verified": true
     }
   ],
