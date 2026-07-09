@@ -1,22 +1,11 @@
 {
-  "updated": "2026-07-09 05:05 UTC",
-  "total": 26,
-  "wins": 6,
+  "updated": "2026-07-09 05:13 UTC",
+  "total": 27,
+  "wins": 7,
   "losses": 20,
-  "net_pnl": -0.2524,
-  "wr_pct": 23.1,
+  "net_pnl": -0.1981,
+  "wr_pct": 25.9,
   "trades": [
-    {
-      "ts": "2026-06-24T10:19:12.317806+00:00",
-      "symbol": "XRPUSDT",
-      "side": "LONG",
-      "outcome": "LOSS",
-      "entry": 1.1001,
-      "exit_px": 1.0945,
-      "pnl": -0.0258,
-      "qty": 4.6,
-      "pnl_verified": true
-    },
     {
       "ts": "2026-06-24T11:49:41.399329+00:00",
       "symbol": "XRPUSDT",
@@ -224,6 +213,17 @@
       "exit_px": 562.25,
       "pnl": -0.0332,
       "qty": 0.009,
+      "pnl_verified": true
+    },
+    {
+      "ts": "2026-07-09T05:11:56.493143+00:00",
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "outcome": "WIN",
+      "entry": 1725.42,
+      "exit_px": 1746.1299999999999,
+      "pnl": 0.0543,
+      "qty": 0.003,
       "pnl_verified": true
     }
   ],
