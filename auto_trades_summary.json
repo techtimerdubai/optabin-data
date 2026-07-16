@@ -1,22 +1,11 @@
 {
-  "updated": "2026-07-16 13:15 UTC",
-  "total": 29,
-  "wins": 8,
+  "updated": "2026-07-16 13:23 UTC",
+  "total": 30,
+  "wins": 9,
   "losses": 21,
-  "net_pnl": -0.1779,
-  "wr_pct": 27.6,
+  "net_pnl": -0.125,
+  "wr_pct": 30.0,
   "trades": [
-    {
-      "ts": "2026-06-26T02:08:40.660640+00:00",
-      "symbol": "DOTUSDT",
-      "side": "LONG",
-      "outcome": "LOSS",
-      "entry": 0.828,
-      "exit_px": 0.8240000000000001,
-      "pnl": -0.0244,
-      "qty": 6.09,
-      "pnl_verified": true
-    },
     {
       "ts": "2026-06-27T17:47:48.148357+00:00",
       "symbol": "DOTUSDT",
@@ -225,13 +214,24 @@
       "pnl": -0.033,
       "qty": 4.7,
       "pnl_verified": true
+    },
+    {
+      "ts": "2026-07-16T13:20:26.409601+00:00",
+      "symbol": "DOTUSDT",
+      "side": "LONG",
+      "outcome": "WIN",
+      "entry": 0.8330000000000001,
+      "exit_px": 0.8430000000000001,
+      "pnl": 0.0529,
+      "qty": 6.05,
+      "pnl_verified": true
     }
   ],
   "balance": {
-    "usdt_free": 68.6,
-    "total_usd": 642.66,
+    "usdt_free": 68.63,
+    "total_usd": 642.57,
     "can_trade": true,
-    "snap_ts": "2026-07-16T12:18:02.159553+00:00",
+    "snap_ts": "2026-07-16T13:19:21.816798+00:00",
     "holdings": [
       {
         "asset": "USDT",
@@ -239,7 +239,7 @@
       },
       {
         "asset": "BTC",
-        "usd_value": 178.8
+        "usd_value": 178.64
       },
       {
         "asset": "USDC",
@@ -251,11 +251,11 @@
       },
       {
         "asset": "BNB",
-        "usd_value": 29.94
+        "usd_value": 29.99
       },
       {
         "asset": "DOT",
-        "usd_value": 5.08
+        "usd_value": 5.09
       }
     ]
   }
