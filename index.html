@@ -708,6 +708,34 @@ body{
 .ob-untracked-btn-primary{ background:var(--yobg); border-color:var(--yobrd); color:var(--gold); }
 </style>
 <style>#aiStatusBar{display:none!important}</style>
+<style>
+/* ===== Redesign polish (Aug 2026): tighter hierarchy, calmer surfaces ===== */
+.panel{ font-variant-numeric:tabular-nums; }
+
+/* Section dividers — drop the heavy band, add a quiet accent tick + air */
+.sec-div{
+  background:transparent; border-bottom:1px solid var(--border);
+  padding:14px 14px 9px; font-size:9.5px; letter-spacing:.12em; color:var(--tx2);
+  display:flex; align-items:center; gap:8px;
+}
+.sec-div::before{ content:""; flex:0 0 auto; width:3px; height:10px;
+  border-radius:2px; background:var(--green); opacity:.8; }
+
+/* Panel headers + CSV button */
+.panel-hd{ padding:11px 14px; }
+.hd-btn{ font-family:var(--mono); font-size:9px; color:var(--green); cursor:pointer;
+  background:var(--gbg); border:1px solid var(--gbrd); border-radius:6px;
+  padding:3px 9px; letter-spacing:.02em; transition:background .15s,transform .05s; }
+.hd-btn:hover{ background:var(--gbrd); }
+.hd-btn:active{ transform:translateY(1px); }
+
+/* Market Mood rows — more room, aligned tabular values */
+.intel-row{ padding:11px 14px; min-height:44px; }
+.intel-val{ font-variant-numeric:tabular-nums; font-weight:600; }
+
+/* Trade-log rows read as clean tabular data */
+#pnlTradeLog{ font-variant-numeric:tabular-nums; }
+</style>
 </head>
 <body>
 
@@ -901,29 +929,19 @@ body{
     </div>
 
     <div class="panel bot-c" id="panelPnl" style="display:flex;flex-direction:column">
-      <div class="pnl-head">
-        <span class="ph-title">P&L Over Time</span>
-        <div class="ptf" role="group" aria-label="Period">
-          <button class="ptf-btn active" onclick="setPtf(this)">7d</button>
-          <button class="ptf-btn" onclick="setPtf(this)">30d</button>
-          <button class="ptf-btn" onclick="setPtf(this)">90d</button>
-        </div>
+      <div class="ph panel-hd" style="flex-shrink:0">
+        <span class="ph-title">Real Trade Log</span>
+        <span class="ph-meta" id="logCnt">Python Bot</span>
+        <span class="ph-meta" id="enginePulse" title="Engine activity — based on the bot's last data push" style="margin-left:8px;font-family:var(--mono);font-size:10px">● engine —</span>
+        <button onclick="exportTradeCSV()" title="Export CSV" class="hd-btn" style="margin-left:auto">⬇ CSV</button>
       </div>
-      <div style="flex:1;padding:6px 10px;min-height:110px"><canvas id="pnlChart"></canvas></div>
-      <div style="border-top:1px solid var(--border);flex-shrink:0">
-        <div class="ph" style="padding:6px 14px">
-          <span class="ph-title">Real Trade Log</span>
-          <span class="ph-meta" id="logCnt">Python Bot</span>
-          <span class="ph-meta" id="enginePulse" title="Engine activity — based on the bot's last data push" style="margin-left:8px;font-family:var(--mono);font-size:10px">● engine —</span>
-          <button onclick="exportTradeCSV()" title="Export" style="font-family:var(--mono);font-size:9px;color:var(--green);background:none;border:0.5px solid var(--gbrd);border-radius:4px;cursor:pointer;padding:1px 7px;margin-left:auto;margin-right:4px">⬇ CSV</button>
-        </div>
-        <!-- Python bot trades shown here, browser AI trades hidden -->
-        <div id="pnlTradeLog" style="max-height:200px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent">
-          <div style="padding:8px 14px;font-size:9px;color:var(--tx3);font-family:var(--mono)">Loading real trades…</div>
-        </div>
-        <!-- hidden tLog kept for JS compatibility -->
-        <div id="tLog" style="display:none" role="log"></div>
+      <!-- Real Trade Log — now fills the panel (P&L chart removed) -->
+      <div id="pnlTradeLog" style="flex:1;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent">
+        <div style="padding:8px 14px;font-size:9px;color:var(--tx3);font-family:var(--mono)">Loading real trades…</div>
       </div>
+      <!-- hidden stubs kept for JS compatibility (chart + legacy logs) -->
+      <canvas id="pnlChart" style="display:none"></canvas>
+      <div id="tLog" style="display:none" role="log"></div>
     </div>
 
     <div class="panel bot-r" id="panelTrade" style="overflow-y:auto;-webkit-overflow-scrolling:touch">
@@ -938,16 +956,20 @@ body{
       <!-- Fat-Pitch Detector · buy-the-washout (fires only when rare extremes align) -->
       <div class="sec-div">🎯 Fat-Pitch Detector · BTC</div>
       <style>
-        .fatpitch-panel{padding:10px 14px;font-family:var(--mono)}
-        .fp-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
-        .fp-score{font-size:22px;font-weight:800;min-width:52px;text-align:center;
-          border:2px solid var(--tx2);border-radius:10px;padding:6px 4px;color:var(--tx2)}
-        .fp-verdict{font-size:12px;font-weight:700;color:var(--tx2)}
-        .fp-sub{font-size:9px;color:var(--tx3);margin-top:2px;line-height:1.4}
-        .fp-sig{display:flex;align-items:center;gap:8px;font-size:10px;padding:3px 0;opacity:.55}
-        .fp-dot{width:16px;text-align:center}
-        .fp-lbl{flex:1;color:var(--tx)}
-        .fp-v{color:var(--tx2);font-weight:700}
+        .fatpitch-panel{padding:4px 14px 16px;font-family:var(--mono)}
+        .fp-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+        .fp-score{font-size:30px;font-weight:800;min-width:66px;text-align:center;
+          border:2px solid var(--tx3);border-radius:14px;padding:12px 6px;color:var(--tx2);
+          font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1}
+        .fp-verdict{font-size:13px;font-weight:700;color:var(--tx2);letter-spacing:.01em}
+        .fp-sub{font-size:10px;color:var(--tx3);margin-top:3px;line-height:1.45}
+        .fp-sig{display:flex;align-items:center;gap:9px;font-size:11px;padding:8px 11px;
+          margin:5px 0;border-radius:9px;background:var(--surface2);border:1px solid transparent;
+          transition:background .2s,border-color .2s,color .2s;color:var(--tx2)}
+        .fp-sig[data-hit="1"]{background:var(--gbg);border-color:var(--gbrd);color:var(--tx)}
+        .fp-dot{width:16px;text-align:center;font-size:12px}
+        .fp-lbl{flex:1}
+        .fp-v{font-weight:700;font-variant-numeric:tabular-nums;color:var(--tx)}
       </style>
       <div id="fatPitchPanel" class="fatpitch-panel">
         <div class="fp-head">
@@ -963,15 +985,10 @@ body{
         <div class="fp-sig" id="fpDraw"><span class="fp-dot">▫️</span><span class="fp-lbl">Deep drawdown (≤−15%)</span><span class="fp-v">—</span></div>
       </div>
 
-      <!-- Python AutoTrader Status -->
-      <div class="sec-div">Python AutoTrader · Status</div>
-      <div id="botStatusPanel" class="bot-status-panel"><div style="padding:8px 14px;font-size:9px;color:var(--tx3);font-family:var(--mono)">Loading…</div></div>
-
-      <!-- Python Real Trades -->
-      <div class="sec-div">Real Trades · Python Bot</div>
-      <div id="pythonTradesPanel" class="your-trades-panel"><div style="padding:8px 14px;font-size:9px;color:var(--tx3);font-family:var(--mono)">Loading trades…</div></div>
-
-      <!-- yourTradesPanel kept hidden for JS compatibility but not shown -->
+      <!-- Removed from view (AutoTrader status + duplicate trades list); kept
+           as hidden stubs so their data-writing JS never null-refs. -->
+      <div id="botStatusPanel" style="display:none"></div>
+      <div id="pythonTradesPanel" style="display:none"></div>
       <div id="yourTradesPanel" style="display:none"></div>
     </div>
   </main>
@@ -2474,7 +2491,7 @@ async function _refreshFatPitch(){
     const setSig=(id,hit,txt)=>{ const el=$(id); if(!el) return;
       const d=el.querySelector('.fp-dot'); if(d) d.textContent=hit?'✅':'▫️';
       const v=el.querySelector('.fp-v'); if(v) v.textContent=txt;
-      el.style.opacity = hit?'1':'0.55'; };
+      el.dataset.hit = hit?'1':'0'; };
     setSig('fpFunding', fundHit, isNaN(fr)?'—':(fr>=0?'+':'−')+Math.abs(fr).toFixed(4)+'%');
     setSig('fpFear',    fearHit, isNaN(fg)?'—':String(fg));
     setSig('fpRsi',     rsiHit,  isNaN(rsi)?'—':rsi.toFixed(0));
