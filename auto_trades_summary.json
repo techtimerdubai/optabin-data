@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24 14:15 UTC",
+  "updated": "2026-08-24 14:25 UTC",
   "total": 31,
   "wins": 9,
   "losses": 22,
@@ -229,13 +229,13 @@
   ],
   "balance": {
     "usdt_free": 38.6,
-    "total_usd": 632.55,
+    "total_usd": 633.59,
     "can_trade": true,
-    "snap_ts": "2026-08-24T13:18:00.754571+00:00",
+    "snap_ts": "2026-08-24T14:18:00.761415+00:00",
     "holdings": [
       {
         "asset": "BTC",
-        "usd_value": 220.01
+        "usd_value": 221.05
       },
       {
         "asset": "USDT",
