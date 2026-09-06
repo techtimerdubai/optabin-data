@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06 20:15 UTC",
+  "updated": "2026-09-06 20:25 UTC",
   "total": 31,
   "wins": 9,
   "losses": 22,
@@ -229,13 +229,13 @@
   ],
   "balance": {
     "usdt_free": 38.88,
-    "total_usd": 622.87,
+    "total_usd": 622.7,
     "can_trade": true,
-    "snap_ts": "2026-09-06T19:18:00.411160+00:00",
+    "snap_ts": "2026-09-06T20:18:00.532416+00:00",
     "holdings": [
       {
         "asset": "BTC",
-        "usd_value": 222.64
+        "usd_value": 222.49
       },
       {
         "asset": "USDT",
@@ -247,7 +247,7 @@
       },
       {
         "asset": "BNB",
-        "usd_value": 38.91
+        "usd_value": 38.88
       },
       {
         "asset": "USDT",
