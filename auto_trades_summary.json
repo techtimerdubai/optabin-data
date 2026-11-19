@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19 17:09 UTC",
+  "updated": "2026-11-19 17:27 UTC",
   "total": 31,
   "wins": 9,
   "losses": 22,
@@ -229,17 +229,17 @@
   ],
   "balance": {
     "usdt_free": 40.8,
-    "total_usd": 529.86,
+    "total_usd": 527.3,
     "can_trade": true,
-    "snap_ts": "2026-11-19T16:23:08.288415+00:00",
+    "snap_ts": "2026-11-19T17:18:07.399140+00:00",
     "holdings": [
       {
         "asset": "USDT",
-        "usd_value": 201.89
+        "usd_value": 201.9
       },
       {
         "asset": "BTC",
-        "usd_value": 175.98
+        "usd_value": 173.73
       },
       {
         "asset": "USDC",
@@ -251,10 +251,10 @@
       },
       {
         "asset": "BNB",
-        "usd_value": 30.45
+        "usd_value": 30.14
       }
     ]
   },
-  "paused": true,
-  "mode": "PAUSED \u2014 deep-oversold measured -EV; yield+DCA active"
+  "paused": false,
+  "mode": "LIVE"
 }
