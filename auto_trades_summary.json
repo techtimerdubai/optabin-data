@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22 19:14 UTC",
+  "updated": "2026-11-22 19:15 UTC",
   "total": 31,
   "wins": 9,
   "losses": 22,
@@ -247,6 +247,6 @@
       }
     ]
   },
-  "paused": false,
-  "mode": "LIVE"
+  "paused": true,
+  "mode": "PAUSED \u00e2\u20ac\u201d deep-oversold measured -EV; yield+DCA active"
 }
